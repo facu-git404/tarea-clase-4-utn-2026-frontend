@@ -42,7 +42,7 @@
             <li>
                 <label>
                     Name:
-                    <input type="text" name="usuario">
+                    <input type="text" name="nombre">
                 </label>
             </li>
             <li>
@@ -65,25 +65,25 @@
                 <li>
                     <label>
                         Angry
-                        <input type="checkbox" value="1">
+                        <input type="checkbox" value="1" name="emotions">
                     </label>
                 </li>
                 <li>
                     <label>
                         Sad
-                        <input type="checkbox" value="2">
+                        <input type="checkbox" value="2" name="emotions">
                     </label>
                 </li>
                 <li>
                     <label>
                         Happy
-                        <input type="checkbox" value="3">
+                        <input type="checkbox" value="3" name="emotions">
                     </label>
                 </li>
                 <li>
                     <label>
                         Ambivalent
-                        <input type="checkbox" value="4">
+                        <input type="checkbox" value="4" name="emotions">
                     </label>
                 </li>
             </ul>
@@ -131,7 +131,7 @@
             <li>
                 <label>
                     Further comments:
-                    <textarea name="" id=""></textarea>
+                    <textarea name="comentarios" id=""></textarea>
                 </label>
             </li>
         </ul>
@@ -142,20 +142,20 @@
             <li>
                 <label>
                     Bio photo:
-                    <input type="text" name="">
+                    <input type="text" name="bio">
                 </label>
                 <label>
-                    
+                    <input type="file" name="photo">
                 </label>
             </li>
             <li>
                 <label>
                     Location visited:
-                    <select name="">
-                        <option value="1">Exapmle 1</option>
-                        <option value="2">Example 2</option>
-                        <option value="3">Example 3</option>
-                        <option value="4">Example 4</option>
+                    <select name="lugar-visitado">
+                        <option value="1">Argentina</option>
+                        <option value="2">Brasil</option>
+                        <option value="3">Chile</option>
+                        <option value="4">Perú</option>
                     </select>
                 </label>
             </li>
@@ -165,7 +165,7 @@
 
         <ul>
             <li>
-                <button type="submit">Submit</button>
+                <button type="submit" name="enviar">Submit</button>
             </li>
     </form>
 </body>
