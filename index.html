@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <!--
+    form = se usa para declarar un formulario
+    input = se usa para declarar un campo de ingreso de información de un formulario, el input tiene atributos dedicados como:
+    Atributo type text = es para poner unicamente texto.
+    Atributo type password = es para ocultar la contraseña.
+    Atributo type email = es para que el campo sea de tipo email, donde es obligatorio el uso de un "@"
+    Atributo type submit = sirve para desencadenar el evento de envio de formulario
+    Atributo type date = sirve para colocar fechas.
+    Atributo name = marca programaticamente el nombre del campo, esto va dentro del input.
+    Atributo type = si no colocamos ningun atributo, por defecto se usara el type "text".
+    Atributo type radio = para que haya una lista de items seleccionables donde podemos elegir o uno (mismo nombre de campo) o varios (distinto nombre de campo).
+    Atributo type value = es para darle un valor a la casilla, si cuentan con el mismo valor solo puedes seleccionar una opcion, pero si tienen distinto valor puedes seleccionar mas de uno.
+    Atributo type checkbox = Casillas para marcar opciones
+    Atributo placeholder = es para guiar al usuario con un texto invisible que desaparece cuando empieza a escribir
+    Atributo required = obliga al usuario a llenar un campo obligatorio
+
+    select = Es una lista de opciones de las cuales podemos elegir alguna, esto se usa mucho para elegir nacionalidades o tipos de documento.
+    dentro del select usaremos el "option" donde desprenderemos muchas opciones seleccionables.
+    Para que un item no sea seleccionable se usa value="N/A" (de nada) "disable".
+
+    textarea = es un area de texto, se usa para dejar mensajes largos.
+
+    Cada input tiene su label, el label se usa para indicar al usuario que informacion se debe escribir en cada campo
+    Para asignar que un input este conctado de forma programatica, hay formas diferentes, una es colocar el input dentro del label y borramos el for="", es muy importante que todo este correctamente asignado porque el navegador lo puede mal entender.
+    Otra forma es asignarle un id al input, es una etiqueta identitaria, que sea unico e irrepetible. Y ese valor asignado lo pones en el for="" para que esten vinculados
+    
+    La info del formulario de momento no se envia a ningun lado, eso lo veremos mas adelante con java script.
+    -->
+
+    <form action="">
+        <h1>My feedback form</h1>
+        <ul>
+            <li>
+                <label>
+                    Name:
+                    <input type="text" name="usuario">
+                </label>
+            </li>
+            <li>
+                <label for="email-login">Email:</label>
+                <input type="email" id="email-login" name="email">
+            </li>
+            <li>
+                <label>
+                    Password:
+                    <input type="password" name="contraseña">
+                </label>
+            </li>
+        </ul>
+
+        <span></span>
+        
+        <ul>
+            <li>Please check all the emotions apply to you:</li>
+            <ul>
+                <li>
+                    <label>
+                        Angry
+                        <input type="checkbox" value="1">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Sad
+                        <input type="checkbox" value="2">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Happy
+                        <input type="checkbox" value="3">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Ambivalent
+                        <input type="checkbox" value="4">
+                    </label>
+                </li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>How satisfield were you with our service?</li>
+            <ul>
+                <li>
+                    <label>
+                        Very satisfield
+                        <input type="radio" name="satisfield">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Satisfield
+                        <input type="radio" name="satisfield">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Didn't care
+                        <input type="radio" name="satisfield">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Dissatisfied
+                        <input type="radio" name="satisfield">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Very dissatisfied
+                        <input type="radio" name="satisfield">
+                    </label>
+                </li>
+            </ul>
+        </ul>
+
+        <span></span>
+
+        <ul>
+            <li>
+                <label>
+                    Further comments:
+                    <textarea name="" id=""></textarea>
+                </label>
+            </li>
+        </ul>
+
+        <span></span>
+
+        <ul>
+            <li>
+                <label>
+                    Bio photo:
+                    <input type="text" name="">
+                </label>
+                <label>
+                    
+                </label>
+            </li>
+            <li>
+                <label>
+                    Location visited:
+                    <select name="">
+                        <option value="1">Exapmle 1</option>
+                        <option value="2">Example 2</option>
+                        <option value="3">Example 3</option>
+                        <option value="4">Example 4</option>
+                    </select>
+                </label>
+            </li>
+        </ul>
+
+        <span></span>
+
+        <ul>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+    </form>
+</body>
+</html>
